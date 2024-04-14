@@ -93,7 +93,7 @@
         <h1 class="modal-title fs-5" id="editModalLabel">Edit this Note</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <form action="/php file/user.php" method="POST">
+      <form action="/user.php" method="POST">
         <div class="modal-body">
          <!-- edit form start-->
           <input type="hidden" name="IdEdit" id="IdEdit">
@@ -203,7 +203,7 @@ if($delete)
 <div class="container my-5 bg-secondary">
     <h2><font color="broun">Add Note</font></h2>
     <br>
-    <form action="/php file/user.php" method="post" >
+    <form action="/user.php" method="post" >
         <div class="mb-3">
             <label for="title" class="form-label"><h5><font color="white">Note Tital</font></h5></label>
             <input type="text" class="form-control" id="title" name="title">
@@ -315,7 +315,7 @@ if($delete)
             if(confirm("Are you sure delete this data..."))
             {
                 console.log("yes");
-                window.location=`/php file/user.php?delete=${Id}`;
+                window.location=`/user.php?delete=${Id}`;
 
             }else
             {
